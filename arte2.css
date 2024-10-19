@@ -1,0 +1,170 @@
+body{
+    width: 0;
+    height: 0;
+    /* background-image: url("ojo-arte.jpeg"); Cambia 'ruta/de/la/imagen.png' por la ruta correcta de la imagen */
+    /*background-size: cover;  Cubrir toda la pantalla */
+    /*background-position: center;  Centrar la imagen */
+    /*background-attachment: fixed; Mantener la imagen fija al hacer scroll*/
+    margin: 10px;
+    padding: 0;
+    /*position: relative;*/
+
+}
+
+.encabezado{ /* esto da un espaciado al titulo de la página además de centrar el texto horizontalmente */
+    /* border: 2px solid; */
+    width: 1320px;
+    height: 120px;
+    text-align: center;
+    /* position: fixed; */
+}
+
+.tipos-arte{ /*esta sección permite la ubicación de los tipos de arte debajo del título */
+    width: 600px;
+    height: 40px;
+    background: #F5F5F5;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    font-size: 20px;
+    align-items: center;
+
+}
+
+/* ******************************INICIO SURREALISMO********************************** */
+.titulo-surrealismo{ /* Esto permite colocar el titulo del primer tipo de arte que es surrealismo */
+    border: 2px solid violet;
+    width: 400px;
+    /* margin-top: 200px; */
+}
+
+.container-surrealismo{
+    /*margin-top: 100px; */
+    border: 2px solid;
+    width: 1300px;
+    height: 580px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    overflow: hidden;
+    padding: 10px;
+    justify-content: space-evenly;
+
+}
+
+.surrea1{
+    background-image: url("https://imagenes.eldebate.com/files/vertical_composte_image/uploads/2024/04/19/66223c6e09832.png.webp");
+    /*'La tentación de san Antonio', de Salvador Dalí*/
+    width: 260px;
+    height: 250px;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+.surrea2{
+    background-image: url("https://imagenes.eldebate.com/files/main_gallery/uploads/2024/04/19/662242565820e.jpeg.webp");
+    /* Lenora Carrington. Autorretrato en la posada del caballo */
+    width: 260px;
+    height: 250px;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+
+/* ******************************INICIO IMPRESIONISMO********************************** */
+.titulo-impresionismo{ /* Esto permite colocar el titulo del primer tipo de arte que es surrealismo */
+    border: 2px solid violet;
+    width: 400px;
+    /* margin-top: 200px; */
+}
+
+.container-impresionismo{
+    /*margin-top: 100px; */
+    border: 2px solid;
+    width: 1300px;
+    height: 580px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    overflow: hidden;
+    padding: 10px;
+    justify-content: space-evenly;
+
+}
+
+
+/* ******************************INICIO EXPRESIONISMO********************************** */
+.titulo-expresionismo{ /* Esto permite colocar el titulo del primer tipo de arte que es surrealismo */
+    border: 2px solid violet;
+    width: 400px;
+    /* margin-top: 200px; */
+}
+
+.container-expresionismo{
+    /*margin-top: 100px; */
+    border: 2px solid;
+    width: 1300px;
+    height: 580px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    overflow: hidden;
+    padding: 10px;
+    justify-content: space-evenly;
+
+}
+
+
+/* ******************************INICIO ARTE ABSTRACTO********************************** */
+.titulo-abstracto{ /* Esto permite colocar el titulo del primer tipo de arte que es surrealismo */
+    border: 2px solid violet;
+    width: 400px;
+    /* margin-top: 200px; */
+}
+
+.container-abstracto{
+    /*margin-top: 100px; */
+    border: 2px solid;
+    width: 1300px;
+    height: 580px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    overflow: hidden;
+    padding: 10px;
+    justify-content: space-evenly;
+
+}
+
+
+/* ******************************INICIO ARTE POP********************************** */
+.titulo-pop{ /* Esto permite colocar el titulo del primer tipo de arte que es surrealismo */
+    border: 2px solid violet;
+    width: 400px;
+    /* margin-top: 200px; */
+}
+
+.container-pop{
+    /*margin-top: 100px; */
+    border: 2px solid;
+    width: 1300px;
+    height: 580px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    overflow: hidden;
+    padding: 10px;
+    justify-content: space-evenly;
+
+}
+
+.obra{ /* aqui se da el tamaño a cada una de las cajas donde estarán las pinturas de todos los tipos */
+    border: 2px solid red;
+    width: 260px;
+    height: 380px;
+    border-radius: 5px;
+
+}
