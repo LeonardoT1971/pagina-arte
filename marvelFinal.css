@@ -1,0 +1,371 @@
+body{
+    background-color: black;
+    width: 0;
+    height: 0;
+    margin: 0px;
+    padding: 0;
+}
+.encabezado{ /* cuadro del encabezado donde esta el titulo*/
+    background: black;
+    width: 1480px;
+    height: 70px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.titulo{ /* Titulo */
+    border: 1px solid grey;
+    width: 1480px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.marvel-titulo{
+    height: 40px;
+}
+
+.titulo-personajes{
+    background: rgb(238, 47, 47);
+    width: 1480px;
+    height: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 10px;
+}
+
+.content{
+    width: 1480px;
+    height: auto;
+    display: flex;
+    justify-content:space-evenly;
+}
+
+.galeria { /*Encierra todas las tarjetas de los heroes */
+    width: 100%;
+    height: 670px;
+    margin-left: 10px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 10px;
+
+}
+
+.cuadro-heroe { /* Corresponde a las dimenciones del borde donde se almacena cada imagen */
+    border: 1px solid #E3682C;
+    width: 300px;
+    height: 300px;
+    margin-top: 5px;
+    position: relative;
+}
+
+img{ /* Da a todas las imagenes un tamaño especifico según el cuadro de selección */
+    width: 300px;
+    height: 300px;
+}
+
+.dibujo { /* La clase dibujo permite dar caracteristicas a las imagenes */
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.9s ease; /* Este es el tiempo de transición a tono mas suave al pasar el mouse */
+    cursor:alias;
+}
+
+.dibujo:hover, .cuadro-heroe:hover{ /* Esta permite el aumento cuando se pasa el mouse */
+    transform: scale(1.1);
+    z-index: 4;
+}
+
+.texto{
+    position: absolute;
+    top: 80%; /* Esta linea perimte que el texto tenga una distancia del 80% desde la parte de arriba del borde del cuadro */
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: rgb(248, 245, 245);
+    font-size: 15px;
+    /* text-align: center; */
+    opacity: 5; /* Oculto por defecto */
+    transition: 0.5s ease; /* Transición suave */
+    font-weight:bolder;
+    font-size: large;
+}
+
+.cuadro-heroe:hover, .dibujo{
+    opacity: 0.9;
+}
+.cuadro-heroe:hover, .texto{
+    opacity: 3;
+}
+
+/* ************************* INICIO HEAD ***************************** */
+
+.contenedor-general{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.separacion{
+    border: 2px solid whitesmoke;
+    background: #f5f5f5;
+    width: 1490px;
+    height: 5px;
+}
+
+.superior, .inferior{
+    width: 1480px;
+    height: 400px;
+
+}
+
+.superior{
+    display: flex;
+    justify-content: space-evenly;
+    margin-left: 8px;
+    background: black;
+
+}
+
+.imagen-head{
+    width: 590px;
+    height: 400px;
+
+}
+
+.informacion-head{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 590px;
+    height: 400px;
+    color: #f5f5f5;
+}
+
+.insider{
+    border: 2px solid orangered;
+    font-size: 26px;
+    color: red;
+}
+
+.mensaje{
+    font-size: 20px;
+    margin: 20px 15px;
+}
+
+.tu{
+    color: red;
+    font-size: 23px;
+}
+
+.inferior{
+    margin-left: 8px;
+    background: #141414;
+}
+
+.video{
+    border: 3px solid whitesmoke;
+    width: 1480px;
+    height: 350px;
+}
+
+
+/* ************************* INICIO PANTALLA AMPLIADA ***************************** */
+
+.imagen-ampliada-contenedor,
+.imagen-ampliada-contenedor2,
+.imagen-ampliada-contenedor3,
+.imagen-ampliada-contenedor4,
+.imagen-ampliada-contenedor5,
+.imagen-ampliada-contenedor6,
+.imagen-ampliada-contenedor7,
+.imagen-ampliada-contenedor8 {
+    display: none; 
+    position: fixed;
+    top: 50%;
+    left: 60%;
+    transform: translate(-50%, -50%);
+    z-index: 1000;
+    background: white;
+    padding: 10px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.5);
+    border-radius: 8px;
+    max-width: 90vw;
+    max-height: 90vh;
+    overflow-y: auto; /* Sirve para que el texto no se salga del cuadro  */
+}
+
+
+.imagen-ampliada-contenedor.mostrar, 
+.imagen-ampliada-contenedor2.mostrar2,
+.imagen-ampliada-contenedor3.mostrar3,
+.imagen-ampliada-contenedor4.mostrar4,
+.imagen-ampliada-contenedor5.mostrar5,
+.imagen-ampliada-contenedor6.mostrar6,
+.imagen-ampliada-contenedor7.mostrar7,
+.imagen-ampliada-contenedor8.mostrar8 {
+    display: block;
+}
+
+.contenido-flex, 
+.contenido-flex2,
+.contenido-flex3,
+.contenido-flex4,
+.contenido-flex5,
+.contenido-flex6,
+.contenido-flex7,
+.contenido-flex8 { 
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+}
+
+#imagen-ampliada, 
+#imagen-ampliada2,
+#imagen-ampliada3,
+#imagen-ampliada4,
+#imagen-ampliada5,
+#imagen-ampliada6,
+#imagen-ampliada7,
+#imagen-ampliada8 {
+    max-width: 50%;
+    height: auto;
+    object-fit: contain;
+    border-radius: 4px;
+}
+
+.descripcion {
+    flex: 1;
+    padding-right: 20px;
+}
+
+.descripcion h2 {
+    margin-top: 0;
+    color: #333;
+    font-size: 24px;
+}
+
+.descripcion p {
+    line-height: 1.6;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+.detalles {
+    background: #f5f5f5;
+    padding: 15px;
+    border-radius: 4px;
+    margin-top: 20px;
+}
+
+.detalles p {
+    margin: 8px 0;
+}
+
+.cerrar, 
+.cerrar2,
+.cerrar3,
+.cerrar4,
+.cerrar5,
+.cerrar6,
+.cerrar7,
+.cerrar8 {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 30px;
+    height: 30px;
+    background: #ff4444;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 20px;
+    display: flex;  
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    line-height: 1;
+}
+
+.cerrar:hover, 
+.cerrar2:hover,
+.cerrar3:hover,
+.cerrar4:hover,
+.cerrar5:hover,
+.cerrar6:hover,
+.cerrar7:hover,
+.cerrar8:hover
+ {
+    background: #adca06; /* Esto hace que cambie de color el boton de cerrar cuando el mouse pase por el */
+}
+
+.overlay, 
+.overlay2,
+.overlay3,
+.overlay4,
+.overlay5,
+.overlay6,
+.overlay7,
+.overlay8
+ {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.7);
+    z-index: 999;
+}
+
+.overlay.mostrar,
+.overlay2.mostrar2,
+.overlay3.mostrar3,
+.overlay4.mostrar4,
+.overlay5.mostrar5,
+.overlay6.mostrar6,
+.overlay7.mostrar7,
+.overlay8.mostrar8
+ {
+    display: block;
+} 
+
+/* Responsividad para pantallas pequeñas */
+ @media (max-width: 768px) {
+    .contenido-flex, 
+    .contenido-flex2,
+    .contenido-flex3,
+    .contenido-flex4,
+    .contenido-flex5,
+    .contenido-flex6,
+    .contenido-flex7,
+    .contenido-flex8
+     {
+        flex-direction: column;
+    }
+
+    #imagen-ampliada, 
+    #imagen-ampliada2,
+    #imagen-ampliada3,
+    #imagen-ampliada4,
+    #imagen-ampliada5,
+    #imagen-ampliada6,
+    #imagen-ampliada7,
+    #imagen-ampliada8
+    {
+        max-width: 100%;
+    }
+
+    .descripcion {
+        padding-right: 0;
+    }
+}
+

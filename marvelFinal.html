@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galería de Imágenes</title>
+    <link rel="stylesheet" href="marvelFinal.css">
+</head>
+<body>
+    <!-- Estructura principal -->
+    <div class="encabezado">
+        <div class="titulo">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFfimq_kAxh97JUJw8lFYaNNOTFbBcErpTIw&s" 
+            alt=""
+            class="marvel-titulo">
+        </div>
+        <div class="definicion"></div>
+    </div>
+    <div class="titulo-personajes">
+        <p style="color: white; font-size: 26px; font-family: RobotoCondensed Bold, Trebuchet MS, Helvetica, Arial, sans-serif;">
+            PERSONAJES DE MARVEL</p>
+    </div>
+
+
+
+        <div class="content">
+            <div class="galeria">
+
+                <!-- ############## IRON MAN ############## -->
+                <div class="cuadro-heroe">
+                    <img src="https://www.cinemascomics.com/wp-content/uploads/2024/04/iron-man-regreso-a-marvel-studios.jpg" 
+                         alt="imagen 1" 
+                        class="dibujo" 
+                        id="dibujo-magneto" 
+                        onclick="mostrarImagen(this)">
+                    <div class="texto">IRON MAN</div>
+                </div>
+
+                <!-- ############## CYCLOPS ############## -->
+                <div class="cuadro-heroe">
+                    <img src="https://cdn.marvel.com/content/1x/191cyc_com_crd_01.png" 
+                        alt="imagen 2" 
+                        class="dibujo"
+                        id="dibujo-cyclops"
+                        onclick="mostrarImagen2(this)">
+                    <div class="texto"> CYCLOPS</div>
+                </div>
+                
+                <!-- ############## PHOENIX ############## -->
+                <div class="cuadro-heroe">
+                    <img src="https://cdn.marvel.com/content/1x/186jgr_com_crd_01.png" 
+                        alt="imagen 3" 
+                        class="dibujo"
+                        id="dibujo-phoenix"
+                        onclick="mostrarImagen3(this)">
+                    <div class="texto">PHOENIX</div>
+                </div>
+
+                <!-- ############## WOLVERINE ############## -->
+                <div class="cuadro-heroe">
+                    <img src="https://cdn.marvel.com/content/1x/034wlv_com_crd_01.jpg" 
+                    alt="imagen 4" 
+                    class="dibujo"
+                    id="dibujo-woverine"
+                    onclick="mostrarImagen4(this)">
+                    <div class="texto">WOLVERINE</div>
+                </div>   
+                
+                <!-- ############## BEST ############## -->
+                <div class="cuadro-heroe">
+                    <img src="https://cdn.marvel.com/content/1x/190bhm_com_crd_01.png" 
+                    alt="imagen 5" 
+                    class="dibujo"
+                    id="dibujo-beast"
+                    onclick="mostrarImagen5(this)">
+                    <div class="texto">BEAST</div>
+                </div>
+
+                <!-- ############## STORM ############## -->
+                <div class="cuadro-heroe">
+                    <img src="https://cdn.marvel.com/content/1x/039stm_com_crd_02.png" 
+                    alt="imagen 6" 
+                    class="dibujo"
+                    id="dibujo-storm"
+                    onclick="mostrarImagen6(this)">
+                    <div class="texto">STORM</div>
+                </div>
+
+                <!-- ############## GAMBIT ############## -->
+                <div class="cuadro-heroe">
+                    <img src="https://cdn.marvel.com/content/1x/356gmb_com_crd_01.png" 
+                    alt="imagen 7" 
+                    class="dibujo"
+                    id="dibujo-gambito"
+                    onclick="mostrarImagen7(this)">
+                    <div class="texto">GAMBIT</div>
+                </div>
+
+                <!-- ############## HULK ############## -->
+                <div class="cuadro-heroe">
+                    <img src="https://www.mundodeportivo.com/alfabeta/hero/2024/10/bruce-banner-hulk-ucm.jpg?width=768&aspect_ratio=16:9&format=nowebp" 
+                    alt="imagen 8" 
+                    class="dibujo"
+                    id="dibujo-rogue"
+                    onclick="mostrarImagen8(this)">
+                    <div class="texto">HULK</div>
+                </div>
+                
+
+            </div>
+        </div>
+    
+
+
+    <!-- ***************************** OVERLAY Y CONTENEDOR DE IMAGENES AMLIADAS ********************************** -->
+
+  <!-- ###################### IRON MAN 1 #######################  -->    
+    <div class="overlay" id="overlay"></div>
+
+    <div class="imagen-ampliada-contenedor" id="contenedor-ampliada">
+        <button class="cerrar" id="cerrar-ampliada" onclick="cerrarImagen()">×</button>
+        <div class="contenido-flex">
+              <img id="imagen-ampliada" 
+                 src="https://cdn0-production-images-kly.akamaized.net/LNMxjS_rbnooJdMwlTVvSxX_y14=/800x450/smart/filters:quality(75):strip_icc():format(webp)/kly-media-production/medias/946748/original/029523200_1438762512-iron_man_games.jpg" 
+                 alt="Imagen Ampliada 1">
+            <div class="descripcion">
+                <h2>Iron Man</h2>
+                <p>Anthony Edward "Tony" Stark, multimillonario magnate empresarial, filántropo estadounidense, playboy y un ingenioso científico e ingeniero, que dirige la empresa de fabricación de armas Industrias Stark..</p>
+                <div class="detalles">
+                    <p><strong>Poderes:</strong> Genio Nivel superhumano. Con el traje tiene: vuelo supersonico, armadura de titanio y oro de alta resistencia, escudo de energia, Rayo de energia dirijida, superfuerza, arsenal militar. </p>
+                    <p><strong>Primera aparición:</strong> Este superhéroe hizo su primera aparición en Tales of Suspense #39 (marzo de 1963) y recibió su propio título en Iron Man #1, en mayo de 1968.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ###################### CYCLOPS 2 #######################  --> 
+
+    <div class="overlay2" id="overlay2"></div>
+    <div class="imagen-ampliada-contenedor2" id="contenedor-ampliada2">
+        <button class="cerrar2" id="cerrar-ampliada2" onclick="cerrarImagen2()">×</button>
+        <div class="contenido-flex2">
+            <img id="imagen-ampliada2"
+                src="https://i.pinimg.com/originals/6a/25/a1/6a25a1c57a751b5ee7bbf060f6020eaf.jpg" 
+                alt="Imagen Ampliada 2">
+            <div class="descripcion">
+                <h2>Cyclops</h2>
+                <p>Scott Summers. Primer miembro de los X-Men, líder estratégico y pareja de Jean Grey. Sufrió una lesión en la cabeza que le impide controlar sus poderes sin ayuda.</p>
+                <div class="detalles">
+                    <p><strong>Poderes: </strong>Dispara rayos ópticos de energía concussiva de sus ojos, que solo puede controlar con lentes de cuarzo rubí.</p>
+                    <p><strong>Primera aparición: </strong>Uncanny X-Men vol. 1 #1 (1963)</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ###################### PHOENIX 3 #######################  --> 
+    <div class="overlay3" id="overlay3"></div>
+    <div class="imagen-ampliada-contenedor3" id="contenedor-ampliada3">
+        <button class="cerrar3" id="cerrar-ampliada3" onclick="cerrarImagen3()">×</button>
+        <div class="contenido-flex3">
+            <img id="imagen-ampliada3"
+                src="https://the616comics.com/cdn/shop/files/image_b708c759-6edf-434a-9199-b66411efb964_1024x1024.jpg?v=1686921018" 
+                alt="Imagen Ampliada 3">
+            <div class="descripcion">
+                <h2>Phoenix</h2>
+                <p>Jean Grey. Fundadora de los X-Men, ha sido conocida como Marvel Girl, Phoenix y Dark Phoenix. Su poder se manifestó cuando vio a su amiga de la infancia ser atropellada.</p>
+                <div class="detalles">
+                    <p><strong>Poderes: </strong>Telepatía y telequinesis. Como Phoenix, tiene acceso a la Fuerza Fénix, una entidad cósmica de inmenso poder.</p>
+                    <p><strong>Primera aparición: </strong>Uncanny X-Men vol. 1 # 101 (octubre de 1976)</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ###################### WOLVERINE 4 #######################  -->
+    <div class="overlay4" id="overlay4"></div>
+    <div class="imagen-ampliada-contenedor4" id="contenedor-ampliada4">
+        <button class="cerrar4" id="cerrar-ampliada4" onclick="cerrarImagen4()">×</button>
+        <div class="contenido-flex4">
+            <img id="imagen-ampliada4"
+                src="https://e.rpp-noticias.io/xlarge/2020/04/27/345634_933540.jpg" 
+                alt="Imagen Ampliada 4">
+            <div class="descripcion">
+                <h2>Wolverine</h2>
+                <p>Logan. Nacido como James Howlett, ha sido parte de los X-Men, los Vengadores y otros equipos. Conocido por su actitud ruda y su pasado misterioso.</p>
+                <div class="detalles">
+                    <p><strong>Poderes: </strong>Factor de curación acelerada, garras de adamantium, sentidos agudizados.</p>
+                    <p><strong>Primera aparición: </strong>Su primera aparición la realizó dentro de las páginas del número 180 del cómic The Incredible Hulk, en octubre de 1974, aunque su presentación formal fue en el número siguiente por descuido del guionista (número 181, noviembre de 1974).</p>
+                </div>
+            </div>
+        </div>
+    </div> 
+
+    <!-- ###################### BEAST 5 #######################  -->
+    <div class="overlay5" id="overlay5"></div>
+    <div class="imagen-ampliada-contenedor5" id="contenedor-ampliada5">
+        <button class="cerrar5" id="cerrar-ampliada5" onclick="cerrarImagen5()">×</button>
+        <div class="contenido-flex5">
+            <img id="imagen-ampliada5"
+                src="https://preview.redd.it/hvtc031acj521.jpg?width=1080&crop=smart&auto=webp&s=384bab3b001d073ed40c51b678cd575d657553f0" 
+                alt="Imagen Ampliada 5">
+            <div class="descripcion">
+                <h2>Best</h2>
+                <p>Hank McCoy. Científico brillante, miembro fundador de los X-Men. Su apariencia bestial es resultado de sus propios experimentos.</p>
+                <div class="detalles">
+                    <p><strong>Poderes: </strong>Fuerza, agilidad y sentidos sobrehumanos, además de un intelecto de nivel genio.</p>
+                    <p><strong>Primera aparición: </strong>Su primera aparición fue Uncanny X-Men vol. 1 # 1 (1963) Marvel Comics.</p>
+                </div>
+            </div>
+        </div>
+    </div> 
+
+    <!-- ###################### STORM 6 #######################  -->
+    <div class="overlay6" id="overlay6"></div>
+    <div class="imagen-ampliada-contenedor6" id="contenedor-ampliada6">
+        <button class="cerrar6" id="cerrar-ampliada6" onclick="cerrarImagen6()">×</button>
+        <div class="contenido-flex6">
+            <img id="imagen-ampliada6"
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcScDTgxJB5gFdlXpLO46aVENVOuevhGQJDJfg&s" 
+                alt="Imagen Ampliada 6">
+            <div class="descripcion">
+                <h2>Storm</h2>
+                <p>Ororo Munroe. Descendiente de una línea de sacerdotisas africanas, ha sido adorada como diosa y fue reina de Wakanda.</p>
+                <div class="detalles">
+                    <p><strong>Poderes: </strong>Control del clima, puede crear tormentas, rayos y vientos.</p>
+                    <p><strong>Primera aparición: </strong>Su primera fue en Giant Size X-Men # 1 (mayo de 1975).</p>
+                </div>
+            </div>
+        </div>
+    </div> 
+
+    <!-- ###################### GAMBIT 7 #######################  -->
+    <div class="overlay7" id="overlay7"></div>
+    <div class="imagen-ampliada-contenedor7" id="contenedor-ampliada7">
+        <button class="cerrar7" id="cerrar-ampliada7" onclick="cerrarImagen7()">×</button>
+        <div class="contenido-flex7">
+            <img id="imagen-ampliada7"
+                src="https://imagedelivery.net/LBWXYQ-XnKSYxbZ-NuYGqQ/badce32e-abf3-48ae-70d8-6f63637a0f00/banner" 
+                alt="Imagen Ampliada 7">
+            <div class="descripcion">
+                <h2>Gambit</h2>
+                <p>Remy LeBeau. Ladrón experto de Nueva Orleans, se unió a los X-Men y ha tenido una relación complicada con Rogue.</p>
+                <div class="detalles">
+                    <p><strong>Poderes: </strong>Carga objetos con energía cinética, haciéndolos explotar al impactar.</p>
+                    <p><strong>Primera aparición: </strong>Apareció por primera vez en las páginas de Uncanny X-Men #266, en agosto de 1990.</p>
+                </div>
+            </div>
+        </div>
+    </div> 
+
+    <!-- ###################### HULK 8 #######################  -->
+    <div class="overlay8" id="overlay8"></div>
+    <div class="imagen-ampliada-contenedor8" id="contenedor-ampliada8">
+        <button class="cerrar8" id="cerrar-ampliada8" onclick="cerrarImagen8()">×</button>
+        <div class="contenido-flex8">
+            <img id="imagen-ampliada8"
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSjeN5PQASsYrCDpfoBmdXNLxm8OM9EwNZNqw&s" 
+                alt="Imagen Ampliada 8">
+            <div class="descripcion">
+                <h2>Hulk</h2>
+                <p>El Dr. Bruce Banner, un científico brillante en el campo de la física nuclear y la radiación gamma, se transformó en Hulk después de exponerse a una explosión de radiación gamma durante un experimento fallido2. Esta transformación ocurre cuando Banner experimenta emociones intensas, especialmente la ira.</p>
+                <div class="detalles">
+                    <p><strong>Poderes: </strong>Hulk posee una fuerza sobrehumana casi ilimitada, resistencia, durabilidad y capacidad de regeneración. Su fuerza aumenta proporcionalmente con su nivel de ira.</p>
+                    <p><strong>Primera aparición: </strong>Hulk debutó en el número 1 de la colección de cómics The Incredible Hulk (mayo de 1962).</p>
+                </div>
+            </div>
+        </div>
+    </div> 
+
+    <script src="marvelFinal.js"></script>
+</body>
+<head>
+    <div class="contenedor-general">
+        <div class="separacion">
+            
+        </div>
+        <div class="superior">
+            <img src="https://cdn.marvel.com/content/1x/mu-promo_module_standard_dsk.jpg" 
+            class="imagen-head" 
+            alt="">
+            <div class="informacion-head">
+                <p class="insider">MARVEL INSIDER</p>
+                <P class="mensaje">Just Think</P>
+                <p class="mensaje">There is nothing wrong with fear, as long as you dont't tel il overcome you</p>
+                <p class="tu">¡Se Tu!</p>
+            </div>
+        </div>
+        <div class="inferior">
+            <iframe width="560" 
+                height="315" 
+                src="https://www.youtube.com/embed/tXXQOC4HugE" 
+                frameborder="0" 
+                allowfullscreen 
+                class="video">
+            </iframe>
+        </div>
+    </div>
+</head>
+</html>
